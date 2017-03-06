@@ -630,12 +630,18 @@
 				}else{
 					//重新创建英雄
 					hero = new Hero(HERO);
-					//赋值新英雄之前的位置
-					if(heroDeadX){//为了防止死前没动bug
+					//赋值新英雄之前的位置,为了防止死前没动(或者x动||y动)
+					if(heroDeadX||heroDeadX==0){
 						hero.x=heroDeadX;
-						hero.y=heroDeadY;
+						
+						
 					}else{
 						hero.x=(WIDTH-hero.width)/2;
+						
+					}
+					if(heroDeadY||heroDeadY==0){
+						hero.y=heroDeadY;
+					}else{
 						hero.y=HEIGHT-hero.height;
 					}
 					
