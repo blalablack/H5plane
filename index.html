@@ -92,7 +92,7 @@
 		<p class="title">必杀技</p>
 		<hr size="1" color="#bbb"/>
 		<p>写轮眼：H键 定住敌人  持续10s</p><br>
-		<p>白眼：B键 看穿敌人一枪毙命 持续10s</p>
+		<p>白眼：B键 看穿敌人一枪毙命 持续20s</p>
 		<br>
 		<p>必杀·斩：S键 清空全屏敌人</p>
 	</div>
@@ -100,7 +100,7 @@
 	
 </div>
 <div id="bgm">
-	<audio src="mp3/bossbg.mp3" id="bossbg"></audio>
+	<audio src="mp3/bossbg.mp3" id="bossbg" loop="loop"></audio>
 	<audio src="mp3/hong.mp3" id="hong"></audio>
 	<audio src="mp3/bai.mp3" id="bai"></audio>
 	<audio src="mp3/siba.mp3" id="siba"></audio>
@@ -136,7 +136,7 @@
 		//红眼
 		let HONG=false;
 		let HONGREST=2;
-		const HONGTIME=10000;
+		const HONGTIME=20000;
 		//白眼
 		let BAI=false;
 		let BAIREST=2;
